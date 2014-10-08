@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4433B386-96AD-4A4B-A891-DAA2F14B5406}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sanxiang</RootNamespace>
+    <AssemblyName>sanxiang</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.3, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="PAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.4.0.16114, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="BaseInfo.cs" />
+    <Compile Include="BaseInfoPro.cs" />
+    <Compile Include="zyy\Formbjls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formbjls.designer.cs">
+      <DependentUpon>Formbjls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formbjcssz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formbjcssz.designer.cs">
+      <DependentUpon>Formbjcssz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formfenleihuizong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formfenleihuizong.designer.cs">
+      <DependentUpon>Formfenleihuizong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formfangchafenxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formfangchafenxi.designer.cs">
+      <DependentUpon>Formfangchafenxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formchaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formchaxun.designer.cs">
+      <DependentUpon>Formchaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formchaxunjieguo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formchaxunjieguo.designer.cs">
+      <DependentUpon>Formchaxunjieguo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formdianya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formdianya.designer.cs">
+      <DependentUpon>Formdianya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formdongtaiqushifenxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formdongtaiqushifenxi.designer.cs">
+      <DependentUpon>Formdongtaiqushifenxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormJianKongDianLiu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormJianKongDianLiu.Designer.cs">
+      <DependentUpon>FormJianKongDianLiu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormJianKongDianYa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormJianKongDianYa.Designer.cs">
+      <DependentUpon>FormJianKongDianYa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formjibentongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formjibentongji.designer.cs">
+      <DependentUpon>Formjibentongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formjuleifenxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formjuleifenxi.designer.cs">
+      <DependentUpon>Formjuleifenxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formpinshufebxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formpinshufebxi.designer.cs">
+      <DependentUpon>Formpinshufebxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formshujudaoru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formshujudaoru.designer.cs">
+      <DependentUpon>Formshujudaoru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormStruct.Designer.cs">
+      <DependentUpon>FormStruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormStructSuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormStructSuo.Designer.cs">
+      <DependentUpon>FormStructSuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zm\FormStructXianlu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormStructXianlu.Designer.cs">
+      <DependentUpon>FormStructXianlu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formxingchengbaobiao1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formxingchengbaobiao1.designer.cs">
+      <DependentUpon>Formxingchengbaobiao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formxingchengbaobiao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formxingchengbaobiao2.designer.cs">
+      <DependentUpon>Formxingchengbaobiao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qyp\Formzuzhongzhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qyp\Formzuzhongzhi.designer.cs">
+      <DependentUpon>Formzuzhongzhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formldbjxq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formldbjxq.designer.cs">
+      <DependentUpon>Formldbjxq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formld.designer.cs">
+      <DependentUpon>Formld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formlsxq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formlsxq.designer.cs">
+      <DependentUpon>Formlsxq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formplcl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formplcl.designer.cs">
+      <DependentUpon>Formplcl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="zyy\Formbjls.resx">
+      <DependentUpon>Formbjls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formbjcssz.resx">
+      <DependentUpon>Formbjcssz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formfenleihuizong.resx">
+      <DependentUpon>Formfenleihuizong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formfangchafenxi.resx">
+      <DependentUpon>Formfangchafenxi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formchaxun.resx">
+      <DependentUpon>Formchaxun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formchaxunjieguo.resx">
+      <DependentUpon>Formchaxunjieguo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formdianya.resx">
+      <DependentUpon>Formdianya.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formdongtaiqushifenxi.resx">
+      <DependentUpon>Formdongtaiqushifenxi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormJianKongDianLiu.resx">
+      <DependentUpon>FormJianKongDianLiu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormJianKongDianYa.resx">
+      <DependentUpon>FormJianKongDianYa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formjibentongji.resx">
+      <DependentUpon>Formjibentongji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formjuleifenxi.resx">
+      <DependentUpon>Formjuleifenxi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formpinshufebxi.resx">
+      <DependentUpon>Formpinshufebxi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formshujudaoru.resx">
+      <DependentUpon>Formshujudaoru.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormStruct.resx">
+      <DependentUpon>FormStruct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormStructSuo.resx">
+      <DependentUpon>FormStructSuo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormStructXianlu.resx">
+      <DependentUpon>FormStructXianlu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formxingchengbaobiao1.resx">
+      <DependentUpon>Formxingchengbaobiao1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formxingchengbaobiao2.resx">
+      <DependentUpon>Formxingchengbaobiao2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qyp\Formzuzhongzhi.resx">
+      <DependentUpon>Formzuzhongzhi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formldbjxq.resx">
+      <DependentUpon>Formldbjxq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formld.resx">
+      <DependentUpon>Formld.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formlsxq.resx">
+      <DependentUpon>Formlsxq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formplcl.resx">
+      <DependentUpon>Formplcl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zm\FormStructZhan.resx">
+      <DependentUpon>FormStructZhan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zyy\Formyxcssz.resx">
+      <DependentUpon>Formyxcssz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="zm\FormStructZhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zm\FormStructZhan.Designer.cs">
+      <DependentUpon>FormStructZhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zyy\Formyxcssz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zyy\Formyxcssz.designer.cs">
+      <DependentUpon>Formyxcssz.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\PAL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
