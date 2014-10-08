@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2005                    */
-/* Created on:     2014/10/7 11:08:20                           */
+/* Created on:     2014/10/8 10:25:21                           */
 /*==============================================================*/
 
 
@@ -164,8 +164,8 @@ go
 /* Table: alarm                                                 */
 /*==============================================================*/
 create table alarm (
-   alarm_id             varchar(30)          not null,
-   watchdog_id          varchar(30)          null,
+   alarm_id             varchar(40)          not null,
+   watchdog_id          varchar(40)          null,
    taiqu_id             varchar(30)          null,
    time                 datetime             not null,
    alarm_type           varchar(50)          not null,
@@ -189,7 +189,7 @@ go
 /* Table: ledger                                                */
 /*==============================================================*/
 create table ledger (
-   ledger_id            varchar(30)          not null,
+   ledger_id            varchar(40)          not null,
    constraint PK_LEDGER primary key nonclustered (ledger_id)
 )
 go
@@ -198,8 +198,8 @@ go
 /* Table: prioritization_scheme                                 */
 /*==============================================================*/
 create table prioritization_scheme (
-   scheme_id            varchar(30)          not null,
-   forecast_id          varchar(30)          null,
+   scheme_id            varchar(40)          not null,
+   forecast_id          varchar(40)          null,
    scheme_model         varchar(50)          not null,
    time                 datetime             not null,
    start_time           datetime             null,
@@ -213,9 +213,9 @@ go
 /* Table: sanxiang_data                                         */
 /*==============================================================*/
 create table sanxiang_data (
-   id                   varchar(30)          not null,
-   watchdog_id          varchar(30)          null,
-   taiqu_id             varchar(30)          null,
+   id                   varchar(40)          not null,
+   watchdog_id          varchar(40)          null,
+   taiqu_id             varchar(40)          null,
    time                 datetime             not null,
    voltage_a            float(10)            not null,
    voltage_b            float(10)            not null,
@@ -250,8 +250,8 @@ go
 /* Table: structure                                             */
 /*==============================================================*/
 create table structure (
-   struct_id            varchar(30)          not null,
-   parent_id            varchar(30)          null,
+   struct_id            varchar(40)          not null,
+   parent_id            varchar(40)          null,
    name                 varchar(200)         null,
    type                 varchar(10)          not null,
    admin_user           varchar(100)         null,
@@ -263,8 +263,8 @@ go
 /* Table: taiqu_structure                                       */
 /*==============================================================*/
 create table taiqu_structure (
-   taiqu_structure_id   varchar(30)          not null,
-   taiqu_id             varchar(30)          null,
+   taiqu_structure_id   varchar(40)          not null,
+   taiqu_id             varchar(40)          null,
    version              int                  not null,
    version_status       varchar(10)          not null,
    constraint PK_TAIQU_STRUCTURE primary key nonclustered (taiqu_structure_id)
@@ -283,8 +283,8 @@ go
 /* Table: taiqu_user                                            */
 /*==============================================================*/
 create table taiqu_user (
-   taiqu_user_id        varchar(30)          not null,
-   uid                  varchar(30)          null,
+   taiqu_user_id        varchar(40)          not null,
+   uid                  varchar(40)          null,
    uname                varchar(20)          not null,
    constraint PK_TAIQU_USER primary key nonclustered (taiqu_user_id)
 )
@@ -294,9 +294,9 @@ go
 /* Table: taiqu_user_distribute                                 */
 /*==============================================================*/
 create table taiqu_user_distribute (
-   distribute_id        varchar(30)          not null,
-   taiqu_user_id        varchar(30)          not null,
-   taiqu_structure_id   varchar(30)          not null,
+   distribute_id        varchar(40)          not null,
+   taiqu_user_id        varchar(40)          not null,
+   taiqu_structure_id   varchar(40)          not null,
    constraint PK_TAIQU_USER_DISTRIBUTE primary key nonclustered (taiqu_user_id, taiqu_structure_id)
 )
 go
@@ -321,9 +321,9 @@ go
 /* Table: user_load                                             */
 /*==============================================================*/
 create table user_load (
-   user_load_id         varchar(30)          not null,
-   taiqu_user_id        varchar(30)          null,
-   uid                  varchar(30)          null,
+   user_load_id         varchar(40)          not null,
+   taiqu_user_id        varchar(40)          null,
+   uid                  varchar(40)          null,
    uname                varchar(20)          not null,
    time                 datetime             not null,
    load_total           float(12)            null,
@@ -344,10 +344,10 @@ go
 /* Table: user_load_forecast                                    */
 /*==============================================================*/
 create table user_load_forecast (
-   user_load_forecast_id varchar(30)          not null,
-   taiqu_user_id        varchar(30)          null,
-   forecast_id          varchar(30)          not null,
-   uid                  varchar(30)          null,
+   user_load_forecast_id varchar(40)          not null,
+   taiqu_user_id        varchar(40)          null,
+   forecast_id          varchar(40)          not null,
+   uid                  varchar(40)          null,
    uname                varchar(20)          not null,
    time                 datetime             not null,
    forecast_method      varchar(20)          not null,
@@ -371,7 +371,7 @@ go
 /* Table: users                                                 */
 /*==============================================================*/
 create table users (
-   user_id              varchar(30)          not null,
+   user_id              varchar(40)          not null,
    username             varchar(20)          not null,
    password             varchar(30)          not null,
    role                 varchar(100)         null,
@@ -387,8 +387,8 @@ go
 /* Table: watchdog                                              */
 /*==============================================================*/
 create table watchdog (
-   watchdog_id          varchar(30)          not null,
-   taiqu_id             varchar(30)          null,
+   watchdog_id          varchar(40)          not null,
+   taiqu_id             varchar(40)          null,
    ip_address           varchar(20)          null,
    constraint PK_WATCHDOG primary key nonclustered (watchdog_id)
 )

@@ -2,3 +2,6 @@ obj
 
 *.cd
 *.suo
+*.exe
+*.exe.config
+*.pdb
