@@ -49,6 +49,7 @@ namespace sanxiang
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+         
             string remeber_pass = Utils.GetConfig("remeber_pass", "no");
             string auto_login = Utils.GetConfig("auto_login", "no");
             string username = Utils.GetConfig("username", "");
@@ -81,7 +82,7 @@ namespace sanxiang
 
                 }
 
-               
+
             }
             else
             {
@@ -142,10 +143,9 @@ namespace sanxiang
                 }
                 else
                 {
-                    //bool login_auth=UserPro.Login(username, password);
-                    bool login_auth = true;
-                    string user_id = "";
-                    if (login_auth)
+                    string user_id = UserPro.Login(username, password);
+
+                    if (user_id != "")
                     {
                         Utils.SetConfig("username", username);
                         Utils.SetConfig("password", Utils.GetJiaMi("auth", password));
@@ -233,10 +233,9 @@ namespace sanxiang
                 string username = Utils.GetConfig("username", "");
                 string password = Utils.GetConfig("password", "");
 
-                //bool login_auth=UserPro.Login(username, Utils.GetJiemi("auth",password));
-                bool login_auth = true;
-                string user_id = "";
-                if (login_auth)
+                string user_id = UserPro.Login(username, Utils.GetJiemi("auth", password));
+
+                if (user_id!="")
                 {
                     Utils.SetConfig("login_user_id", user_id);
                     MainForm formMain = new MainForm();

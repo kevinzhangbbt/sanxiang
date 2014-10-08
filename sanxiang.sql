@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2005                    */
-/* Created on:     2014/10/8 10:25:21                           */
+/* Created on:     2014/10/8 10:55:09                           */
 /*==============================================================*/
 
 
@@ -373,7 +373,7 @@ go
 create table users (
    user_id              varchar(40)          not null,
    username             varchar(20)          not null,
-   password             varchar(30)          not null,
+   password             varchar(40)          not null,
    role                 varchar(100)         null,
    nickname             varchar(30)          null,
    created_time         datetime             not null,
