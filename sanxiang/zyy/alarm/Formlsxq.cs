@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace sangxiang
+namespace sanxiang
 {
-    public partial class ld : Form
+    public partial class Formlsxq : Form
     {
-        public ld()
+        public Formlsxq()
         {
             InitializeComponent();
         }
 
-        private void listViewEx1_SelectedIndexChanged(object sender, EventArgs e)
+        private void panelEx2_Click(object sender, EventArgs e)
         {
 
         }

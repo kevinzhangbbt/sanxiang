@@ -6,16 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-//test
-//test
-namespace sangxiang
+
+namespace sanxiang
 {
-    public partial class bjls : Form
+    public partial class Formbjxq : Form
     {
-        public bjls()
+        public Formbjxq()
+        {
+            InitializeComponent();
+        }
+
+        private void panelEx2_Click(object sender, EventArgs e)
         {
 
-            InitializeComponent();
         }
     }
 }

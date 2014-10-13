@@ -1,6 +1,6 @@
-﻿namespace sangxiang__在线监测
+﻿namespace sanxiang
 {
-    partial class yxcssz
+    partial class Formcssz
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.listViewEx1 = new DevComponents.DotNetBar.Controls.ListViewEx();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.labelX26 = new DevComponents.DotNetBar.LabelX();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX22 = new DevComponents.DotNetBar.LabelX();
             this.label6 = new System.Windows.Forms.Label();
@@ -132,15 +140,8 @@
             this.comboItem7 = new DevComponents.Editors.ComboItem();
             this.comboItem8 = new DevComponents.Editors.ComboItem();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX26 = new DevComponents.DotNetBar.LabelX();
-            this.listViewEx1 = new DevComponents.DotNetBar.Controls.ListViewEx();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
@@ -156,13 +157,75 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelX1
+            // listViewEx1
             // 
-            this.labelX1.Location = new System.Drawing.Point(349, 14);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(63, 23);
-            this.labelX1.TabIndex = 12;
-            this.labelX1.Text = "已选设备";
+            // 
+            // 
+            // 
+            this.listViewEx1.Border.Class = "ListViewBorder";
+            this.listViewEx1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.listViewEx1.GridLines = true;
+            this.listViewEx1.Location = new System.Drawing.Point(134, 126);
+            this.listViewEx1.Name = "listViewEx1";
+            this.listViewEx1.Size = new System.Drawing.Size(486, 198);
+            this.listViewEx1.TabIndex = 25;
+            this.listViewEx1.UseCompatibleStateImageBehavior = false;
+            this.listViewEx1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "所";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "站";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "线路";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "台区";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "设备";
+            // 
+            // labelX26
+            // 
+            this.labelX26.Location = new System.Drawing.Point(134, 367);
+            this.labelX26.Name = "labelX26";
+            this.labelX26.Size = new System.Drawing.Size(75, 23);
+            this.labelX26.TabIndex = 24;
+            this.labelX26.Text = "越限设置";
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Location = new System.Drawing.Point(464, 668);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Size = new System.Drawing.Size(75, 23);
+            this.buttonX3.TabIndex = 23;
+            this.buttonX3.Text = "返回上一级";
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(387, 668);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(77, 23);
+            this.buttonX1.TabIndex = 22;
+            this.buttonX1.Text = "确定";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // panelEx1
             // 
@@ -222,7 +285,7 @@
             this.panelEx1.Controls.Add(this.labelX3);
             this.panelEx1.Controls.Add(this.comboBoxEx1);
             this.panelEx1.Controls.Add(this.labelX2);
-            this.panelEx1.Location = new System.Drawing.Point(90, 300);
+            this.panelEx1.Location = new System.Drawing.Point(134, 398);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(675, 213);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -232,8 +295,7 @@
             this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
-            this.panelEx1.TabIndex = 14;
-            this.panelEx1.Click += new System.EventHandler(this.panelEx1_Click);
+            this.panelEx1.TabIndex = 21;
             // 
             // labelX22
             // 
@@ -936,89 +998,50 @@
             this.labelX2.Size = new System.Drawing.Size(67, 23);
             this.labelX2.TabIndex = 0;
             this.labelX2.Text = "越限类型：";
-            this.labelX2.Click += new System.EventHandler(this.labelX2_Click);
             // 
-            // buttonX1
+            // labelX1
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(343, 529);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(77, 23);
-            this.buttonX1.TabIndex = 15;
-            this.buttonX1.Text = "确定";
+            this.labelX1.Location = new System.Drawing.Point(325, 75);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(63, 23);
+            this.labelX1.TabIndex = 20;
+            this.labelX1.Text = "已选设备";
             // 
-            // buttonX3
+            // panelEx2
             // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX3.Location = new System.Drawing.Point(420, 529);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Size = new System.Drawing.Size(75, 23);
-            this.buttonX3.TabIndex = 16;
-            this.buttonX3.Text = "返回上一级";
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx2.Location = new System.Drawing.Point(0, 0);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(984, 762);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 26;
+            this.panelEx2.Click += new System.EventHandler(this.panelEx2_Click);
             // 
-            // labelX26
-            // 
-            this.labelX26.Location = new System.Drawing.Point(90, 269);
-            this.labelX26.Name = "labelX26";
-            this.labelX26.Size = new System.Drawing.Size(75, 23);
-            this.labelX26.TabIndex = 18;
-            this.labelX26.Text = "越限设置";
-            // 
-            // listViewEx1
-            // 
-            // 
-            // 
-            // 
-            this.listViewEx1.Border.Class = "ListViewBorder";
-            this.listViewEx1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listViewEx1.GridLines = true;
-            this.listViewEx1.Location = new System.Drawing.Point(90, 65);
-            this.listViewEx1.Name = "listViewEx1";
-            this.listViewEx1.Size = new System.Drawing.Size(486, 198);
-            this.listViewEx1.TabIndex = 19;
-            this.listViewEx1.UseCompatibleStateImageBehavior = false;
-            this.listViewEx1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "所";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "站";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "线路";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "台区";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "设备";
-            // 
-            // yxcssz
+            // Formcssz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 566);
+            this.ClientSize = new System.Drawing.Size(984, 762);
             this.Controls.Add(this.listViewEx1);
             this.Controls.Add(this.labelX26);
             this.Controls.Add(this.buttonX3);
             this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.labelX1);
-            this.Name = "yxcssz";
-            this.Text = "越限参数设置";
+            this.Controls.Add(this.panelEx2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Formcssz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Formcssz";
             this.panelEx1.ResumeLayout(false);
             this.panelEx1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
@@ -1039,21 +1062,16 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.Controls.ListViewEx listViewEx1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private DevComponents.DotNetBar.LabelX labelX26;
+        private DevComponents.DotNetBar.ButtonX buttonX3;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
-        private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx2;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
-        private DevComponents.Editors.ComboItem comboItem1;
-        private DevComponents.Editors.ComboItem comboItem2;
-        private DevComponents.Editors.ComboItem comboItem3;
-        private DevComponents.Editors.ComboItem comboItem4;
-        private DevComponents.Editors.ComboItem comboItem5;
-        private DevComponents.Editors.ComboItem comboItem6;
-        private DevComponents.Editors.ComboItem comboItem7;
-        private DevComponents.Editors.ComboItem comboItem8;
         private DevComponents.DotNetBar.LabelX labelX22;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numericUpDown11;
@@ -1143,14 +1161,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
-        private DevComponents.DotNetBar.ButtonX buttonX3;
-        private DevComponents.DotNetBar.LabelX labelX26;
-        private DevComponents.DotNetBar.Controls.ListViewEx listViewEx1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx2;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.Editors.ComboItem comboItem1;
+        private DevComponents.Editors.ComboItem comboItem2;
+        private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.Editors.ComboItem comboItem4;
+        private DevComponents.Editors.ComboItem comboItem5;
+        private DevComponents.Editors.ComboItem comboItem6;
+        private DevComponents.Editors.ComboItem comboItem7;
+        private DevComponents.Editors.ComboItem comboItem8;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
     }
 }
