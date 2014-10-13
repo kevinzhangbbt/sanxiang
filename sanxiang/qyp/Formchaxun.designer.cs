@@ -76,9 +76,9 @@
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -303,7 +303,7 @@
             "相别",
             "所在地区",
             "服务对象"});
-            this.comboBox1.Location = new System.Drawing.Point(93, 20);
+            this.comboBox1.Location = new System.Drawing.Point(89, 20);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 44;
@@ -648,13 +648,16 @@
             this.groupBox5.TabIndex = 55;
             this.groupBox5.TabStop = false;
             // 
-            // labelX6
+            // buttonX2
             // 
-            this.labelX6.Location = new System.Drawing.Point(257, 10);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(75, 23);
-            this.labelX6.TabIndex = 0;
-            this.labelX6.Text = "对象确定";
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Location = new System.Drawing.Point(597, 157);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(75, 23);
+            this.buttonX2.TabIndex = 57;
+            this.buttonX2.Text = "返回";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // buttonX1
             // 
@@ -667,18 +670,15 @@
             this.buttonX1.Text = "确定";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
-            // buttonX2
+            // labelX6
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(597, 157);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(75, 23);
-            this.buttonX2.TabIndex = 57;
-            this.buttonX2.Text = "返回";
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
+            this.labelX6.Location = new System.Drawing.Point(257, 10);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(75, 23);
+            this.labelX6.TabIndex = 0;
+            this.labelX6.Text = "对象确定";
             // 
-            // Form21
+            // Formchaxun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -687,7 +687,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Name = "Form21";
+            this.Name = "Formchaxun";
             this.Text = "查询";
             this.Load += new System.EventHandler(this.Form21_Load);
             this.groupBox4.ResumeLayout(false);
