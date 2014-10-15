@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
+
+
+
 namespace tongjifenxi
 {
     public partial class Formchaxun : Form
