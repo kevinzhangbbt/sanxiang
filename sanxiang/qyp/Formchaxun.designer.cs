@@ -303,7 +303,7 @@
             "相别",
             "所在地区",
             "服务对象"});
-            this.comboBox1.Location = new System.Drawing.Point(89, 20);
+            this.comboBox1.Location = new System.Drawing.Point(93, 20);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 44;
